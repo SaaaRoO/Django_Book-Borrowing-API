@@ -102,9 +102,6 @@ library_system_project/
 
 ## API Endpoints
 
-### Authentication
-- `POST /api/auth/login/` - Login with credentials.
-- `POST /api/auth/logout/` - Logout user.
 
 ### Books
 - `GET /api/books/` - List all books.
@@ -145,15 +142,11 @@ By default, the project uses SQLite. To switch to a different database (e.g., Po
 1. Update the `DATABASES` section in `settings.py`:
    ```python
    DATABASES = {
-       'default': {
-           'ENGINE': 'django.db.backends.postgresql',
-           'NAME': '<db_name>',
-           'USER': '<db_user>',
-           'PASSWORD': '<db_password>',
-           'HOST': 'localhost',
-           'PORT': '5432',
-       }
-   }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+      }
+    }
    ```
 2. Install PostgreSQL dependencies:
    ```bash
