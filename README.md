@@ -8,19 +8,15 @@ This Library Management System is a web-based application built using Django and
 
 ## Features
 
-1. **User Management**:
-   - Admin users can manage the system.
-   - Authentication with session or token-based authentication.
-
-2. **Book Management**:
+1. **Book Management**:
    - Add, update, and delete book records.
    - List and search for available books.
 
-3. **Borrowing System**:
+2. **Borrowing System**:
    - Borrow and return books.
    - Track borrowed books and due dates.
 
-4. **RESTful API**:
+3. **RESTful API**:
    - All functionality is exposed through a RESTful API for integration with other systems.
 
 ---
@@ -79,23 +75,18 @@ library_system_project/
    venv\Scripts\activate     # For Windows
    ```
 
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Run migrations:
+3. Run migrations:
    ```bash
    python manage.py makemigrations
    python manage.py migrate
    ```
 
-5. Start the development server:
+4. Start the development server:
    ```bash
    python manage.py runserver
    ```
 
-6. Access the application:
+5. Access the application:
    Open a browser and navigate to `http://127.0.0.1:8000/`.
 
 ---
